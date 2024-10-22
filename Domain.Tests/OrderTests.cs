@@ -114,6 +114,27 @@ namespace Domain.Tests
             this.mockRepository.VerifyAll();
         }
 
+        [Test]
+        public async Task CreateOrder_NegativeWeight()
+        {
+            var service = this.CreateService();
+
+            Order newOrder = new()
+            {
+                DeliveryTime = DateTime.Now,
+                DistrictId = Guid.NewGuid(),
+                Number = "123456",
+                Weight = 0
+            };
+
+            Assert.ThrowsAsync<NegativeWeightException>(
+                       async () =>
+                       {
+                           await service.CreateOrderAsync(newOrder, IPAddress.Parse("192.137.123.209"));
+                       });
+            this.mockRepository.VerifyAll();
+        }
+
         [TestCase("ee7c9c25-955b-44cd-93dc-80630636f167", "2023-12-16 14:15:00.000", 1, 2)]
         public async Task GetOrdersByDistrict_ExpectedBehavior(Guid districtId, DateTimeOffset firstDeliveryDateTime, int page, int perPage)
         {

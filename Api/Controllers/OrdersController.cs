@@ -141,6 +141,11 @@ namespace Api.Controllers
                 _logger.LogInformation($"District does not exist");
                 return BadRequest("District does not exist");
             }
+            catch (NegativeWeightException)
+            {
+                _logger.LogInformation($"Weight must be more than 0");
+                return BadRequest("Weight must be more than 0");
+            }
         }
     }
 }

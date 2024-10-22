@@ -42,6 +42,8 @@ namespace Domain.Services
         {
             using var transaction = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
 
+            if (newOrder.Weight <= 0) throw new NegativeWeightException();
+
             newOrder.Weight = Math.Round(newOrder.Weight, _decimalPlacesNum);
             
             do
