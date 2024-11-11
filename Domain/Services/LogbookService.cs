@@ -1,7 +1,6 @@
-﻿using Data.Interfaces;
-using Data.Models;
+﻿using Domain.Interfaces;
+using Domain.Models;
 using Domain.Exceptions;
-using Domain.Interfaces;
 using Domain.ViewModels;
 using System;
 using System.Collections.Generic;

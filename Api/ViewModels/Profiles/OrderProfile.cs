@@ -1,8 +1,7 @@
 ﻿using Api.ViewModels.Requests;
 using Api.ViewModels.Responses;
 using AutoMapper;
-using Data.Models;
-using System;
+using Domain.Models;
 
 namespace Api.ViewModels.Profiles
 {

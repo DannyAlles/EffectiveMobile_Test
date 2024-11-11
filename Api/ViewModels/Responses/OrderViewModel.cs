@@ -1,7 +1,4 @@
-﻿using Data.Models;
-using System.ComponentModel.DataAnnotations;
-
-namespace Api.ViewModels.Responses
+﻿namespace Api.ViewModels.Responses
 {
     public class OrderViewModel
     {

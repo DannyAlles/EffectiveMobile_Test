@@ -1,18 +1,10 @@
-﻿using Data.Interfaces;
-using Data.Models;
-using Data.Repositories;
-using Domain.Exceptions;
+﻿using Domain.Exceptions;
 using Domain.Interfaces;
-using Infrastructure;
-using Microsoft.Extensions.Configuration;
+using Domain.Models;
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Transactions;
 
 namespace Domain.Services

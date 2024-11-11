@@ -1,7 +1,7 @@
 ﻿using Api.ViewModels.Requests;
 using Api.ViewModels.Responses;
 using AutoMapper;
-using Data.Models;
+using Domain.Models;
 using Domain.Exceptions;
 using Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;

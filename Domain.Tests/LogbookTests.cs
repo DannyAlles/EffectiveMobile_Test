@@ -1,16 +1,8 @@
-﻿using Data.Interfaces;
-using Data.Models;
-using Domain.Exceptions;
+﻿using Domain.Exceptions;
+using Domain.Interfaces;
 using Domain.Services;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
 using System.Net;
-using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Domain.Tests
 {

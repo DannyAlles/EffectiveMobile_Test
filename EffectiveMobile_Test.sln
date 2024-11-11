@@ -7,11 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{A8D5D6C8-C933-4423-88F7-05F49E22911D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{15393667-FA0B-453F-A433-9DE378919AAA}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{49D3E5CE-1984-4137-98B6-911AE0D41E03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Tests", "Domain.Tests\Domain.Tests.csproj", "{DC5EE5CA-454C-4069-B9C2-46385A577CF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Tests", "Domain.Tests\Domain.Tests.csproj", "{DC5EE5CA-454C-4069-B9C2-46385A577CF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +25,6 @@ Global
 		{A8D5D6C8-C933-4423-88F7-05F49E22911D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8D5D6C8-C933-4423-88F7-05F49E22911D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8D5D6C8-C933-4423-88F7-05F49E22911D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{15393667-FA0B-453F-A433-9DE378919AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15393667-FA0B-453F-A433-9DE378919AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15393667-FA0B-453F-A433-9DE378919AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15393667-FA0B-453F-A433-9DE378919AAA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{49D3E5CE-1984-4137-98B6-911AE0D41E03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{49D3E5CE-1984-4137-98B6-911AE0D41E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49D3E5CE-1984-4137-98B6-911AE0D41E03}.Release|Any CPU.ActiveCfg = Release|Any CPU

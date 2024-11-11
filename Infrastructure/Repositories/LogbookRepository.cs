@@ -1,5 +1,5 @@
-﻿using Data.Interfaces;
-using Data.Models;
+﻿using Domain.Interfaces;
+using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data.Repositories
+namespace Infrastructure.Repositories
 {
     public class LogbookRepository : ILogbookRepository
     {

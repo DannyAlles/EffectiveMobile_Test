@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Data.Migrations
+namespace Infrastructure.Migrations
 {
     /// <inheritdoc />
     public partial class Init : Migration
@@ -313,7 +313,7 @@ namespace Data.Migrations
                                                   2.5,
                                                   districtIds[2],
                                                   new DateTime(2023, 12, 17, 13, 15, 00,
-                                                  DateTimeKind.Local) 
+                                                  DateTimeKind.Local)
                                           }, 
                                                 // Октябрьский район
                                           {
@@ -322,7 +322,7 @@ namespace Data.Migrations
                                                   2.5,
                                                   districtIds[2],
                                                   new DateTime(2023, 12, 17, 13, 40, 00,
-                                                  DateTimeKind.Local) 
+                                                  DateTimeKind.Local)
                                           }, 
                                                 // Октябрьский район
                                           {
@@ -331,7 +331,7 @@ namespace Data.Migrations
                                                   2.5,
                                                   districtIds[2],
                                                   new DateTime(2023, 12, 17, 13, 20, 00,
-                                                  DateTimeKind.Local) 
+                                                  DateTimeKind.Local)
                                           }, 
                                                 // Октябрьский район
                                           {
@@ -340,7 +340,7 @@ namespace Data.Migrations
                                                   2.5,
                                                   districtIds[2],
                                                   new DateTime(2023, 12, 17, 13, 25, 00,
-                                                  DateTimeKind.Local) 
+                                                  DateTimeKind.Local)
                                           }, 
                                                 // Октябрьский район
                                           {
@@ -349,7 +349,7 @@ namespace Data.Migrations
                                                   2.5,
                                                   districtIds[2],
                                                   new DateTime(2023, 12, 17, 15, 15, 00,
-                                                  DateTimeKind.Local) 
+                                                  DateTimeKind.Local)
                                           }, 
                                                 // Октябрьский район
                                           {
@@ -358,7 +358,7 @@ namespace Data.Migrations
                                                   2.5,
                                                   districtIds[2],
                                                   new DateTime(2023, 12, 20, 13, 15, 00,
-                                                  DateTimeKind.Local) 
+                                                  DateTimeKind.Local)
                                           }, 
                                                 // Октябрьский район
                                           {
@@ -367,12 +367,11 @@ namespace Data.Migrations
                                                   2.5,
                                                   districtIds[2],
                                                   new DateTime(2024, 11, 17, 13, 15, 00,
-                                                  DateTimeKind.Local) 
+                                                  DateTimeKind.Local)
                                           }
                                           });
 
             #endregion
-
         }
 
         /// <inheritdoc />

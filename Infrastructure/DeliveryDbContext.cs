@@ -1,4 +1,4 @@
-﻿using Data.Models;
+﻿using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data
+namespace Infrastructure
 {
     public class DeliveryDbContext : DbContext
     {

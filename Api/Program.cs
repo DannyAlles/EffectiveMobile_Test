@@ -1,9 +1,8 @@
-using Data;
-using Data.Interfaces;
-using Data.Repositories;
+using Domain;
 using Domain.Interfaces;
 using Domain.Services;
 using Infrastructure;
+using Infrastructure.Repositories;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
