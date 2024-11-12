@@ -2,7 +2,7 @@
 
 namespace Api.ViewModels.Requests
 {
-    public class CreateOrderViewModel
+    public class OrderRequest
     {
         [Required]
         public double Weight { get; set; }

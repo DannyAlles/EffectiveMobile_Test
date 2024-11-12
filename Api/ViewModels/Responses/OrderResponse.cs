@@ -1,6 +1,6 @@
 ﻿namespace Api.ViewModels.Responses
 {
-    public class OrderViewModel
+    public class OrderResponse
     {
         public Guid Id { get; set; }
         public string Number { get; set; }

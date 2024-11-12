@@ -37,7 +37,7 @@ namespace Api.Controllers
         /// <returns>Заказы</returns>
         /// <response code="200">Файл получен</response>
         /// <response code="400">Район не найден или пагинация неверна</response>
-        [ProducesResponseType(typeof(IEnumerable<OrderViewModel>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(IEnumerable<OrderResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // GET: <OrdersController>
         [HttpGet("Districts/{districtId}")]
@@ -57,7 +57,7 @@ namespace Api.Controllers
 
                 _logger.LogInformation($"User gets orders information for district {districtId}");
 
-                return Ok(_mapper.Map<IEnumerable<OrderViewModel>>(orders));
+                return Ok(_mapper.Map<IEnumerable<OrderResponse>>(orders));
             }
             catch (DistrictNotFoundException)
             {
@@ -79,7 +79,7 @@ namespace Api.Controllers
         /// <returns>Файл с заказами</returns>
         /// <response code="200">Файл получен</response>
         /// <response code="400">Район не найден</response>
-        [ProducesResponseType(typeof(IEnumerable<OrderViewModel>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(IEnumerable<OrderResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // GET: <OrdersController>
         [HttpGet("Districts/{districtId}/Download")]
@@ -113,12 +113,12 @@ namespace Api.Controllers
         /// <response code="200">Обращение создан</response>
         /// <response code="400">Район не найден</response>
         /// <response code="422">Неверно заполненные поля</response>
-        [ProducesResponseType(typeof(OrderViewModel), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(OrderResponse), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
         // Post: <OrdersController>
         [HttpPost]
-        public async Task<IActionResult> CreateOrderAsync([FromBody] CreateOrderViewModel createOrderViewModel)
+        public async Task<IActionResult> CreateOrderAsync([FromBody] OrderRequest createOrderViewModel)
         {
             if (!ModelState.IsValid)
             {
@@ -134,7 +134,7 @@ namespace Api.Controllers
                 
                 _logger.LogInformation($"User created new order");
 
-                return Ok(_mapper.Map<OrderViewModel>(order));
+                return Ok(_mapper.Map<OrderResponse>(order));
             }
             catch (DistrictNotFoundException)
             {

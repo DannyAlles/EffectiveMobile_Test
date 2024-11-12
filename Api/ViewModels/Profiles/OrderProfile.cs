@@ -9,8 +9,8 @@ namespace Api.ViewModels.Profiles
     {
         public OrderProfile()
         {
-            CreateMap<CreateOrderViewModel, Order>().ForMember(o => o.DeliveryTime, obj => obj.MapFrom(vm => vm.DeliveryTime.DateTime));
-            CreateMap<Order, OrderViewModel>();
+            CreateMap<OrderRequest, Order>().ForMember(o => o.DeliveryTime, obj => obj.MapFrom(vm => vm.DeliveryTime.DateTime));
+            CreateMap<Order, OrderResponse>();
         }
     }
 }

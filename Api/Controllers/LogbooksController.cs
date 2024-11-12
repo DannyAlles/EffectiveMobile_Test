@@ -35,7 +35,7 @@ namespace Api.Controllers
         /// <returns>Список IP в формате {IP}: {AccessAt} с количеством обращений с него</returns>
         /// <response code="200">Файл получен</response>
         /// <response code="400">Неверный формат IP</response>
-        [ProducesResponseType(typeof(IEnumerable<LogbookByIpViewModel>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(IEnumerable<LogbookByIpResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // GET: <LogbooksController>
         [HttpGet]
@@ -50,7 +50,7 @@ namespace Api.Controllers
 
                 _logger.LogInformation($"User gets IPs from {startIp} to {endIp}");
 
-                return Ok(filtredLogbooks.Select(x => new LogbookByIpViewModel()
+                return Ok(filtredLogbooks.Select(x => new LogbookByIpResponse()
                 {
                     AddressAndTime = $"{x.IpAddress}: {x.AccessAt.ToString("yyyy-MM-dd HH:mm:ss")}",
                     Count = x.Count
@@ -73,7 +73,7 @@ namespace Api.Controllers
         /// <returns>Файл со списком IP в формате {IP}: {AccessAt} с количеством обращений с него</returns>
         /// <response code="200">Файл получен</response>
         /// <response code="400">Неверный формат IP</response>
-        [ProducesResponseType(typeof(IEnumerable<LogbookByIpViewModel>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(IEnumerable<LogbookByIpResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // GET: <LogbooksController>
         [HttpGet("Download")]
